@@ -5,6 +5,7 @@ import { HeaderComponent } from './header/header.component';
 import { FooterComponent } from './footer/footer.component';
 import { SpeakerDetailsComponent } from './speaker-details/speaker-details.component';
 import { ItemsComponent } from './items/items.component';
+import { BuyTicketComponent } from './buy-ticket/buy-ticket.component';
 
 const routes: Routes = [
   {path:'',component: HomeComponent},
@@ -12,7 +13,8 @@ const routes: Routes = [
   {path:'header',component:HeaderComponent},
   {path:'footer',component:FooterComponent},
   {path:'speaker-details',component:SpeakerDetailsComponent},
-  {path:'itms',component:ItemsComponent}
+  {path:'itms',component:ItemsComponent},
+  {path:'buy-ticket',component:BuyTicketComponent}
 ];
 
 @NgModule({

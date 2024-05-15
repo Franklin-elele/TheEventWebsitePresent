@@ -1,0 +1,13 @@
+.Clickme{
+    font-size: 15px;
+    border-radius: 50px;
+    padding: 10px 40px;
+    transition: all 0.2s;
+    background-color: #000000;
+    border: 0;
+    color: #ffffff;
+    margin-left: 600px;
+    padding: 10px 80px;
+    font-size: large;
+    font: bold;
+}

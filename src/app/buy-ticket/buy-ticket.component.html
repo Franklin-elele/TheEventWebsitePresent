@@ -1,0 +1,59 @@
+<!--==========================
+    Header
+  ============================-->
+<header id="header" class="header-fixed">
+  <div class="container">
+
+    <div id="logo" class="pull-left">
+      <!-- Uncomment below if you prefer to use a text logo -->
+      <!-- <h1><a href="#main">C<span>o</span>nf</a></h1>-->
+      <a href="index-2.html#intro" class="scrollto"><img src="../../assets/img/logo.png" alt="" title=""></a>
+    </div>
+
+    <nav id="nav-menu-container">
+      <ul class="nav-menu">
+        <li class="menu-active"><a href="#intro">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#speakers">Speakers</a></li>
+        <li><a href="#schedule">Schedule</a></li>
+        <li><a href="#venue">Venue</a></li>
+        <li><a href="#hotels">Hotels</a></li>
+        <li><a href="#gallery">Gallery</a></li>
+        <li><a href="#sponsors">Sponsors</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li class="buy-tickets"><a href="#buy-tickets">Buy Tickets</a></li>
+      </ul>
+    </nav><!-- #nav-menu-container -->
+  </div>
+</header><!-- #header -->
+
+<br><br>
+      
+      <ul>
+        <li *ngFor="let item of collection | paginate: { itemsPerPage: 3, currentPage: p }">  <!-- Pro Tier -->
+          <div class="col-lg-4">
+            <div class="card">
+              <div class="card-body">
+                <h5 class="card-title text-muted text-uppercase text-center">{{item.type}}</h5>
+                <h6 class="card-price text-center">{{item.price}}</h6>
+                <hr>
+                <ul class="fa-ul">
+                  <li><span class="fa-li"><i class="fa fa-check"></i></span>{{item.features}}</li>
+                  <!-- <li><span class="fa-li"><i class="fa fa-check"></i></span>Coffee Break</li>
+                  <li><span class="fa-li"><i class="fa fa-check"></i></span>Custom Badge</li>
+                  <li><span class="fa-li"><i class="fa fa-check"></i></span>Community Access</li>
+                  <li><span class="fa-li"><i class="fa fa-check"></i></span>Workshop Access</li>
+                  <li><span class="fa-li"><i class="fa fa-check"></i></span>After Party</li> -->
+                </ul>
+                <hr>
+                <div class="text-center">
+                  <button type="button" class="btn" data-toggle="modal" data-target="#buy-ticket-modal" data-ticket-type="premium-access">Buy Now</button>
+                </div>
+
+              </div>
+            </div>
+          </div> </li>
+      </ul>
+      
+      <pagination-controls (pageChange)="p = $event"></pagination-controls>
+

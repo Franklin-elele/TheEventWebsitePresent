@@ -8,6 +8,10 @@ import { HeaderComponent } from './header/header.component';
 import { FooterComponent } from './footer/footer.component';
 import { SpeakerDetailsComponent } from './speaker-details/speaker-details.component';
 import { ItemsComponent } from './items/items.component';
+import { BuyTicketComponent } from './buy-ticket/buy-ticket.component';
+import { PaginationComponent } from './pagination/pagination.component';
+import { NgxPaginationModule } from 'ngx-pagination';
+
 
 @NgModule({
   declarations: [
@@ -16,11 +20,14 @@ import { ItemsComponent } from './items/items.component';
     HeaderComponent,
     FooterComponent,
     SpeakerDetailsComponent,
-    ItemsComponent
+    ItemsComponent,
+    BuyTicketComponent,
+    PaginationComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    NgxPaginationModule
   ],
   providers: [],
   bootstrap: [AppComponent]
